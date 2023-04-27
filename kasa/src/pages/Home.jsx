@@ -1,10 +1,13 @@
-import logo from '../logo.svg';
 import '../App.css';
-import Header from '../components/Header/index'
+import Banniere from '../components/Home/Banniere'
+import Box from '../components/Home/Box_location'
 
 function Home() {
   return (
-    <h1>Home</h1>
+    <>
+    <Banniere />
+    <Box />
+    </>
   )
 }
 

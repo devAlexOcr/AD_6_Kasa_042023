@@ -9,6 +9,7 @@ import Error from './pages/Error';
 import FicheLogement from './pages/FicheLogement' 
 import Apropos from './pages/Apropos'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 export default function Rout() {
   return ( 
@@ -20,6 +21,7 @@ export default function Rout() {
         <Route path='Apropos' element={<Apropos />} />
         <Route path='*' element={<Error />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }

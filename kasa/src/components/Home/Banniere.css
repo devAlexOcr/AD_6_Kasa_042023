@@ -1,0 +1,16 @@
+#banniere {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 250px;
+    background-color: rgb(154, 238, 28);
+    margin: auto;
+    border-radius: 20px;
+}
+
+#banniere p{
+    color: white;
+    font-size: 48px;
+}
