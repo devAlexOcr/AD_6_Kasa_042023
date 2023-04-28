@@ -1,0 +1,32 @@
+#banniere {
+    width: 90%;
+    height: 400px;
+    background-color: red;
+}
+
+#presentation{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tags {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#gauche {
+    width: 50%;
+}
+
+#Tag p {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 115px;
+    height:25px;
+    text-align: center;
+    background-color: #FF6060;
+}

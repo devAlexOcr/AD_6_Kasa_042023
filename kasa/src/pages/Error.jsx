@@ -1,4 +1,3 @@
-import '../App.css'
 
 function Error() {
     return (

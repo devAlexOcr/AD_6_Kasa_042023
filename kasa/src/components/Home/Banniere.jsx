@@ -1,5 +1,4 @@
 import React from "react";
-import './Banniere.css'
 
 function Banniere() {
     return (
