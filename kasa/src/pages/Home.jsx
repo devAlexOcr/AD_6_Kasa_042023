@@ -1,12 +1,21 @@
 import Banniere from '../components/Home/Banniere'
-import Box from '../components/Home/Box_location'
+import Carte from '../components/Home/Carte_logement'
 import '../components/Home/Banniere.css'
+import '../components/Home/box.css'
 
 function Home() {
   return (
     <>
-    <Banniere />
-    <Box />
+    <Banniere  title="Chez vous, partout et ailleurs" ScrBg="../assets/images/background_img.png"/>
+    <div id="box">
+      <Carte />
+      <Carte />
+      <Carte />
+      <Carte />
+      <Carte />
+      <Carte />
+      <Carte />
+    </div>
     </>
   )
 }

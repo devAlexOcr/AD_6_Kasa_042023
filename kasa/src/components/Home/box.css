@@ -1,7 +1,11 @@
 #box{
     width: 90%;
-    height: 400px;
+    height: auto;
     background-color: grey;
     border-radius: 20px;
     margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

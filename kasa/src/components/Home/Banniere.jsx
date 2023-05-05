@@ -1,9 +1,17 @@
 import React from "react";
+import { useRef, useEffect } from "react";
 
-function Banniere() {
+function Banniere( {title='', SrcBg='../assets/images/background_img.png'}) {
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const banImg =ref.current;
+        banImg.style.backgroundImage = 'url(${SrcBg})';
+    },[SrcBg])
+
     return (
-       <div id='banniere'>
-        <p>Chez vous, partout et ailleurs</p>
+       <div ref={ref} id='banniere'>
+        { title !== "" && (<p>{title}</p>)}
        </div>
        
     )

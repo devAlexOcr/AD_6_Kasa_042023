@@ -8,6 +8,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
 
 #footer h1{
@@ -16,4 +17,10 @@
 
 #footer p{
     padding-bottom: 25px;
+}
+
+#footer img {
+    width: 120px;
+    height: 40px;
+    margin-top: 65px;
 }

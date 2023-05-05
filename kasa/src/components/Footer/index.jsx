@@ -1,14 +1,13 @@
 import React from 'react'
 import './footer.css'
-import Logo from '../Header/logo'
+import logo from './logo.png'
 
 
 function Footer() {
     return (
        <div id='footer'>
-            <>
-            <Logo />
-            </>
+            <img src={logo} alt='logo blanc' />     
+            
             <p>
             <i class="fa-regular fa-copyright"></i> 2020 Kasa, All rights reserved
             </p>

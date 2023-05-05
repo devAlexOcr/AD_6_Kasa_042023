@@ -1,18 +1,16 @@
 import React from 'react'
 import  {Link} from 'react-router-dom'
 import Nav from './nav_link'
-import Logo from './logo'
 import './header.css'
+import logo from './logo.png'
 
 
 
 function Header() {
     return (
         <header>
-        <>
-        <Logo />
-        <Nav />
-        </>
+        <img src={logo} alt="logo couleur" />
+        <Nav />      
         </header>
     )
 }

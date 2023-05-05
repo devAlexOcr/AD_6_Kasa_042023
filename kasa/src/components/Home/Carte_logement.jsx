@@ -1,8 +1,8 @@
 import React from "react";
-import './location.css'
+import './carte.css'
 import  {Link} from 'react-router-dom'
 
-function Location() {
+function Carte() {
     return (
     <>
     <Link to='FicheLogement'>
@@ -14,4 +14,4 @@ function Location() {
     )
 }
 
-export default Location
+export default Carte
