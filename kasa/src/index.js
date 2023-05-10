@@ -8,7 +8,7 @@ import Home from './pages/Home.jsx';
 import Error from './pages/Error';
 import FicheLogement from './pages/FicheLogement' 
 import Apropos from './pages/Apropos'
-import Header from './components/Header'
+import Header from './components/Header/index'
 import Footer from './components/Footer'
 
 export default function Rout() {
@@ -17,7 +17,7 @@ export default function Rout() {
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='FicheLogement' element={<FicheLogement />} />
+        <Route path='/FicheLogement/:id' element={<FicheLogement />} />
         <Route path='Apropos' element={<Apropos />} />
         <Route path='*' element={<Error />} />
       </Routes>

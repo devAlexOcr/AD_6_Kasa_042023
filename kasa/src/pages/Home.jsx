@@ -3,18 +3,21 @@ import Carte from '../components/Home/Carte_logement'
 import '../components/Home/Banniere.css'
 import '../components/Home/box.css'
 
+import { Logements} from "../data/Appartements.js"
+console.log(Logements)
+
 function Home() {
   return (
     <>
-    <Banniere  title="Chez vous, partout et ailleurs" ScrBg="../assets/images/background_img.png"/>
+    <Banniere  title="Chez vous, partout et ailleurs" SrcBg="../assets/images/background_img.png" />
     <div id="box">
-      <Carte />
-      <Carte />
-      <Carte />
-      <Carte />
-      <Carte />
-      <Carte />
-      <Carte />
+      {
+        Logements.map(log => (
+          <Carte key={log.id} title={log.title} cover={log.cover} id={log.id} />
+        ))
+      }
+      
+    
     </div>
     </>
   )

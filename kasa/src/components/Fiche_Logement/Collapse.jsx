@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useRef } from 'react';
 import './collapse.css'
+import fleche from '../../assets/icones/fleche.png'
 
 const Collapsible = (props) => {
 
@@ -8,13 +9,11 @@ const Collapsible = (props) => {
         setOPen(!open);
       };
     
-    const contentRef = useRef();
-      if (contentRef.current) console.log(contentRef.current.scrollHeight);
 
     const [open, setOPen] = useState(false);
         return (
             <div>
-                <button onClick={toggle}>{props.label}</button>
+                <button onClick={toggle}>{props.label}<img src={fleche} alt="fleche bas" /></button>
             {open && 
             <div  className={open ? "content-show" : "content-parent"}>
               

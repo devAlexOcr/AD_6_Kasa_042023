@@ -9,7 +9,7 @@ function Footer() {
             <img src={logo} alt='logo blanc' />     
             
             <p>
-            <i class="fa-regular fa-copyright"></i> 2020 Kasa, All rights reserved
+            <i className="fa-regular fa-copyright"></i> 2020 Kasa, All rights reserved
             </p>
        </div>
     )
