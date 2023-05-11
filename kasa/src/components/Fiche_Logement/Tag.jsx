@@ -1,10 +1,13 @@
 import React from "react";
 import './tag.css'
+import { useEffect, useRef } from "react";
+
 
 function Tag() {
+
     return (
        <div id='Tag'>
-            <p>Text</p>
+           <p>text</p> 
        </div>
     )
 }

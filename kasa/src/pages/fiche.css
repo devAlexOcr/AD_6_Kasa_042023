@@ -16,11 +16,19 @@
     width: 50%;
 }
 
-#Tag p {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 115px;
-    height:25px;
-    text-align: center;
-    background-color: #FF6060;
+
+
+#collapse {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between
+}
+
+#collapse button, #collapse .content{
+   width: 500px; 
+}
+
+#collapse .content {
+    height: 150px;
 }

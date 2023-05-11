@@ -1,18 +1,35 @@
+#droite {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 200px;
+}
+
 #photo{
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 65px;
+    height: 65px;
+    border-radius: 33px;
     background-color: gray;
 }
 
 #identite{
     display: flex;
     flex-direction: column;
+    font-size: 18px;
 }
 
 #proprietaire{
+    margin: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     
+}
+
+#Stars {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    font-size: 24px;
+    color: #FF6060;
 }

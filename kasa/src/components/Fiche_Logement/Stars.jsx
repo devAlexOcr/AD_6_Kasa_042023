@@ -1,4 +1,5 @@
 import React from "react";
+import "./proprietaire.css"
 
 function Stars() {
     return (

@@ -21,7 +21,6 @@ export default function Rout() {
         <Route path='Apropos' element={<Apropos />} />
         <Route path='*' element={<Error />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   )
 }
