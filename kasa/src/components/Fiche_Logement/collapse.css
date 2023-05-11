@@ -5,6 +5,10 @@
     background-color: #F7F7F7;
     border-radius: 5px;
 }
+
+.content p {
+    margin: 20px;
+}
     
 .content-parent {
     height: 0px;

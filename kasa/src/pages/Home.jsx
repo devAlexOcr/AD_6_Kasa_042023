@@ -10,7 +10,7 @@ console.log(Logements)
 function Home() {
   return (
     <>
-    <Banniere  title="Chez vous, partout et ailleurs" SrcBg="/background_img.png" />
+    <Banniere  title="Chez vous, partout et ailleurs" SrcBg="../assets/images/background_img.png" />
     <div id="box">
       {
         Logements.map(log => (

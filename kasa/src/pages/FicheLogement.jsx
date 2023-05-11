@@ -7,8 +7,8 @@ import Tag from '../components/Fiche_Logement/Tag'
 import Stars from '../components/Fiche_Logement/Stars'
 import Collapsible from '../components/Fiche_Logement/Collapsible'
 import Footer from '../components/Footer'
-
 import { Logements} from "../data/Appartements.js"
+
 
 
 
@@ -25,36 +25,26 @@ function FicheLogement() {
                     <Tag />                                   
                 </div>
             </div>
+
             <div id='droite'>
                 <Proprietaire />                               
                 <Stars />
             </div>
-            </div>
-            <div id="collapse">
-            <Collapsible label="description" >
-                
-                 <p>
-                    The collapsible component puts long sections of the information under a
-                    block enabling users to expand or collapse to access its details.
-                    The collapsible component puts long sections of the information under a
-                    block enabling users to expand or collapse to access its details.
-                    The collapsible component puts long sections of the information under a
-                    block enabling users to expand or collapse to access its details.
-                </p>
-            </Collapsible>
-            <Collapsible label="Equipements" >
-                
-                 <p>
-                    The collapsible component puts long sections of the information under a
-                    block enabling users to expand or collapse to access its details.
-                </p>
-            </Collapsible>
-            </div>
-            <Footer />
-        
+        </div>
+
+        <div id="collapse">
+
+                <Collapsible key={Logements.id} label="Description">
+                    <p>{Logements.description}</p>    
+                </Collapsible>    
+                <Collapsible key={Logements.id} label="Equipements">
+                    <p>{Logements.description}</p>    
+                </Collapsible> 
+        </div>
+
+        <Footer />        
       </>
     )
 }
-
 
 export default FicheLogement;

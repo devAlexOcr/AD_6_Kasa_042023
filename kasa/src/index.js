@@ -9,7 +9,7 @@ import Error from './pages/Error';
 import FicheLogement from './pages/FicheLogement' 
 import Apropos from './pages/Apropos'
 import Header from './components/Header/index'
-import Footer from './components/Footer'
+
 
 export default function Rout() {
   return ( 
