@@ -7,10 +7,7 @@ import Tag from '../components/Fiche_Logement/Tag'
 import Stars from '../components/Fiche_Logement/Stars'
 import Collapsible from '../components/Fiche_Logement/Collapsible'
 import Footer from '../components/Footer'
-import { Logements} from "../data/Appartements.js"
-
-
-
+import { Logements } from "../data/Appartements.js"
 
 function FicheLogement() {
     return (
@@ -19,10 +16,12 @@ function FicheLogement() {
         <div id='presentation'>
             <div id='gauche'>
                 <Nom />
-                <div id='tags'>                        
-                    <Tag />     
-                    <Tag />
-                    <Tag />                                   
+                <div id='tags'>  
+                    {Logements[0].tags.map(tag =>
+                    <Tag title={1}>
+                       
+                    </Tag>
+                    )}                                                    
                 </div>
             </div>
 
@@ -34,13 +33,16 @@ function FicheLogement() {
 
         <div id="collapse">
 
-                <Collapsible key={Logements.id} label="Description">
-                    <p>{Logements.description}</p>    
+                <Collapsible key={Logements[0].id} label="Description">
+                    <p>{Logements[0].description}</p>    
                 </Collapsible>    
-                <Collapsible key={Logements.id} label="Equipements">
-                    <p>{Logements.description}</p>    
+                 
+                <Collapsible key={Logements[0].id+1} label="Equipements" >
+                    {Logements[0].equipments.map(equip =>
+                        <li>{equip}</li>
+                        )}  
                 </Collapsible> 
-        </div>
+                        </div>
 
         <Footer />        
       </>
