@@ -6,45 +6,49 @@ import Proprietaire from '../components/Fiche_Logement/proprietaire'
 import Tag from '../components/Fiche_Logement/Tag'
 import Stars from '../components/Fiche_Logement/Stars'
 import Collapsible from '../components/Fiche_Logement/Collapsible'
-import Footer from '../components/Footer'
-import { Logements } from "../data/Appartements.js"
+import { Logements } from "../data/Logements.js"
+import Slider from '../components/Fiche_Logement/slider.jsx'
+import { useParams } from 'react-router-dom'
+
 
 function FicheLogement() {
+    const Params = useParams()
+    console.log(Params.id)
+    const logement = Logements.find((Logements) => Logements.id === Params.id)
+    console.log(logement.pictures)
     return (
       <>
-        <Banniere />
+        <Slider />
         <div id='presentation'>
             <div id='gauche'>
-                <Nom />
+                <Nom title={logement.title} localisation={logement.location} />
                 <div id='tags'>  
-                    {Logements[0].tags.map(tag =>
-                    <Tag title={1}>
-                       
-                    </Tag>
+                    {logement.tags.map((tag, i) =>
+                    <Tag key={i} title={tag} />   
                     )}                                                    
                 </div>
             </div>
 
             <div id='droite'>
-                <Proprietaire />                               
+                <Proprietaire title={logement.host.name} photo={logement.host.picture} />                               
                 <Stars />
             </div>
         </div>
 
         <div id="collapse">
 
-                <Collapsible key={Logements[0].id} label="Description">
-                    <p>{Logements[0].description}</p>    
+                <Collapsible key={logement.id} label="Description">
+                    <p>{logement.description}</p>    
                 </Collapsible>    
                  
-                <Collapsible key={Logements[0].id+1} label="Equipements" >
-                    {Logements[0].equipments.map(equip =>
-                        <li>{equip}</li>
+                <Collapsible key={logement.id+1} label="Equipements" >
+                    <ul>
+                    {logement.equipments.map((equip, i) =>
+                        <li key={i}>{equip}</li>
                         )}  
+                    </ul>
                 </Collapsible> 
                         </div>
-
-        <Footer />        
       </>
     )
 }

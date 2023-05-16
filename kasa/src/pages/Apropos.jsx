@@ -2,12 +2,12 @@ import React from "react";
 import Collapsible from '../components/Fiche_Logement/Collapsible'
 import { Collapse } from '../data/Collapse'
 import Banniere from "../components/Home/Banniere"
-import Footer from "../components/Footer";
+import  SrcBg from "../assets/images/background_apropos.png"
 
 function Apropos() {
     return (
     <>
-        <Banniere />
+        <Banniere SrcBg={SrcBg} />
         <div className="App">
             {
                 Collapse.map(col =>
@@ -18,7 +18,6 @@ function Apropos() {
                 
             }
         </div>
-        <Footer />
     </>
     )
 }

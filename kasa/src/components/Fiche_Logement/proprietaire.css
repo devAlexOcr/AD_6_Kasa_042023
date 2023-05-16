@@ -5,11 +5,12 @@
     width: 200px;
 }
 
-#photo{
+#photo img{
     width: 65px;
     height: 65px;
     border-radius: 33px;
     background-color: gray;
+    object-fit: cover;
 }
 
 #identite{

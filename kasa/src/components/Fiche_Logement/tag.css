@@ -1,7 +1,10 @@
 #Tag p {
+    font-family: 'Montserrat';
+    color: white;
+    width: auto;
+    white-space: nowrap;
+    padding: 3px 20px;
     border-radius: 10px;
-    width: 115px;
-    height:25px;
     text-align: center;
     background-color: #FF6060;
 }

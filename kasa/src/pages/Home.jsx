@@ -2,15 +2,14 @@ import Banniere from '../components/Home/Banniere'
 import Carte from '../components/Home/Carte_logement'
 import '../components/Home/Banniere.css'
 import '../components/Home/box.css'
-import Footer from '../components/Footer'
+import SrcBg from '../assets/images/background_img.png'
+import { Logements } from "../data/Logements.js"
 
-import { Logements } from "../data/Appartements.js"
-console.log(Logements)
 
 function Home() {
   return (
     <>
-    <Banniere  title="Chez vous, partout et ailleurs" SrcBg="../assets/images/background_img.png" />
+    <Banniere  title="Chez vous, partout et ailleurs" SrcBg={SrcBg}/>
     <div id="box">
       {
         Logements.map(log => (
@@ -18,7 +17,6 @@ function Home() {
         ))
       }
     </div>
-    <Footer />
     </>
   )
 }

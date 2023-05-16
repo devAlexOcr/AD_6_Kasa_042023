@@ -1,15 +1,15 @@
 import React from "react";
 import './proprietaire.css'
 
-function Proprietaire() {
+function Proprietaire({title, photo}) {
     return (
        <div id='proprietaire'>
             <div id="identite">
-                <p>Prenom</p>
-                <p>Nom</p>
+                <p>{title}</p>
+                
             </div>
             <div id="photo">
-
+                <img src={photo} />
             </div>
        </div>
     )
