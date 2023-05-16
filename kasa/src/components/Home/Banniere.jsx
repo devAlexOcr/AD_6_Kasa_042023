@@ -6,9 +6,11 @@ function Banniere( {title='', SrcBg=''} ) {
 
     useEffect(() => {
         const banImg = ref.current;
-        banImg.style.backgroundImage = `url(${SrcBg})`
+        banImg.style.background = `url(${SrcBg}), rgb(0,0,0,0.3)`
         banImg.style.backgroundPosition = "center"
         banImg.style.backgroundSize= "cover"
+        banImg.style.backgroundBlendMode ="darken"
+        
     },[SrcBg])                                                                              
 
     return (
