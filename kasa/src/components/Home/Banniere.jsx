@@ -15,7 +15,7 @@ function Banniere( {title='', SrcBg=''} ) {
 
     return (
        <div ref={ref} id='banniere'>
-        { title !== "" && (<p>{title}</p>)}
+        { title !== "" && (<h1>{title}</h1>)}
        </div>
        
     )
