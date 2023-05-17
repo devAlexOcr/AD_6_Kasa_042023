@@ -12,7 +12,7 @@ const Collapsible = (props) => {
 
     const [open, setOPen] = useState(false);
         return (
-            <div>
+        <div className='collapse'>
                 <button onClick={toggle}>{props.label}<img src={fleche} alt="fleche bas" /></button>
             {open && 
             <div  className={open ? "content-show" : "content-parent"}>
@@ -21,7 +21,7 @@ const Collapsible = (props) => {
                 
             </div>          
             }
-            </div>
+        </div>
         )
 }
 

@@ -14,17 +14,17 @@
     width: 50%;
 }
 
-
-
 #collapse {
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between
 }
-
+#collapse .collapse{
+    width: 40%;
+}
 #collapse button, #collapse .content{
-   width: 500px; 
+   width: 100%; 
 }
 
 #collapse .content {

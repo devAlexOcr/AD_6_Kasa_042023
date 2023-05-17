@@ -1,0 +1,30 @@
+@media all and (max-width: 768px) {
+
+    #box {
+        width: 100%;
+        background: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 20px auto;
+        gap: 20px;
+        
+    }
+
+    #box a {
+        width: 90%;
+        margin: auto;
+    }
+    
+    #banniere h1 {
+        padding: 40px;
+        font-size: 24px;
+    }
+
+    #carte {
+        height: 255px;
+    }
+
+    #carte h2 {
+        width: 84%;
+    }
+}

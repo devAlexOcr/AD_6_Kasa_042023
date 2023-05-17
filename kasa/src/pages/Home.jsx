@@ -4,6 +4,7 @@ import '../components/Home/Banniere.css'
 import '../components/Home/box.css'
 import SrcBg from '../assets/images/background_img.png'
 import { Logements } from "../data/Logements.js"
+import './home.css'
 
 
 function Home() {

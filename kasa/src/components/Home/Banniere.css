@@ -14,3 +14,9 @@
     color: white;
     font-size: 48px;
 }
+
+@media all and (max-width: 768px) {
+    #banniere {
+        height: 111px;
+    }
+}

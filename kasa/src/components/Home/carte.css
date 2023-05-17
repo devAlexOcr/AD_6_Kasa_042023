@@ -20,4 +20,5 @@
     margin: 20px;
     color: white;
     position: absolute;
+    white-space: pre-wrap;
 }
