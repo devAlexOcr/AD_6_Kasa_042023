@@ -58,3 +58,9 @@ button {
 .collapse{
     width: 90%;
 }
+
+@media all and (max-width: 768px) {
+    button img {
+        height: 8px;
+    }
+}

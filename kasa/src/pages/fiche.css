@@ -30,3 +30,25 @@
 #collapse .content {
     height: 150px;
 }
+
+#collapse p ,#identite p,  #collapse li {
+    color: #FF6060;
+}
+
+@media all and (max-width: 768px) {
+
+    #presentation{
+        flex-direction: column;
+    }
+    #droite{
+        width: 90%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}

@@ -49,3 +49,9 @@
 .active{
     border: 2px solid #ffffff;
 }
+
+@media all and (max-width: 768px) {
+.slideshow{
+    height: 255px;
+}
+}

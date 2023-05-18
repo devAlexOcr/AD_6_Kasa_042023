@@ -3,6 +3,7 @@ import Collapsible from '../components/Fiche_Logement/Collapsible'
 import { Collapse } from '../data/Collapse'
 import Banniere from "../components/Home/Banniere"
 import  SrcBg from "../assets/images/background_apropos.png"
+import './apropos.css'
 
 function Apropos() {
     return (
