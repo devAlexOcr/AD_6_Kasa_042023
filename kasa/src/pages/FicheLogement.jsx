@@ -13,9 +13,17 @@ import { useParams } from 'react-router-dom'
 
 function FicheLogement() {
     const Params = useParams()
-    console.log(Params.id)
     const logement = Logements.find((Logements) => Logements.id === Params.id)
-    console.log(logement.pictures)
+    let rating = logement.rating
+    console.log(rating)
+    const stars = document.querySelectorAll(".fa-solid")
+
+function colorStar () {
+    for(let i=0; i < rating; i++) {
+        stars[i].style.color = '#FF6600'
+        }}
+        
+
     return (
       <>
         <Slider />
@@ -52,5 +60,6 @@ function FicheLogement() {
       </>
     )
 }
+
 
 export default FicheLogement;
