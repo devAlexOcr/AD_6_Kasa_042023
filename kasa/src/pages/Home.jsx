@@ -1,13 +1,33 @@
 import Banniere from '../components/Home/Banniere'
 import Carte from '../components/Home/Carte_logement'
-import '../components/Home/Banniere.css'
-import '../components/Home/box.css'
+
 import SrcBg from '../assets/images/background_img.png'
-import { Logements } from "../data/Logements.js"
-import './home.css'
+
+import { useState, useEffect } from 'react'
+
+
 
 
 function Home() {
+
+  const [Logements, setLogements] = useState([]);
+
+  useEffect(() => {
+    fetch('../../data/Logements.json'
+    ,{
+        headers : { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+    })
+    .then(function(response){          
+        return response.json();
+    })
+    .then(function(data) {          
+      setLogements(data);
+    })
+  }, []);
+
   return (
     <>
     <Banniere  title="Chez vous, partout et ailleurs" SrcBg={SrcBg}/>

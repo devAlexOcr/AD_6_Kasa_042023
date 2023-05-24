@@ -1,5 +1,5 @@
 import React from 'react'
-import './slider.css'
+
 
 import chevronLeft from '../../assets/icones/chevronLeft.png'
 import chevronRight from '../../assets/icones/chevronRight.png'

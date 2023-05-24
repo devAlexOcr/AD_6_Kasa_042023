@@ -1,5 +1,5 @@
 import React from "react";
-import './proprietaire.css'
+
 
 function Proprietaire({title, photo}) {
     return (

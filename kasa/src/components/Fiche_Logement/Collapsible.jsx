@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useRef } from 'react';
-import './collapse.css'
 import fleche from '../../assets/icones/fleche.png'
 
 const Collapsible = (props) => {

@@ -1,8 +1,6 @@
 import React from 'react'
-import  {Link} from 'react-router-dom'
 import Nav from './nav_link'
-import './header.css'
-import logo from './logo.png'
+import logo from '../../assets/logo/logo_header.png'
 
 
 

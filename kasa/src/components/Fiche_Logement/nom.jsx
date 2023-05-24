@@ -1,5 +1,5 @@
 import React from "react";
-import './nom.css'
+
 
 function Nom({title, localisation}) {
     return (

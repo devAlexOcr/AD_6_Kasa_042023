@@ -1,7 +1,14 @@
 import React from "react";
-import "./proprietaire.css"
 
-function Stars() {
+const stars = document.querySelectorAll(".fa-solid")
+    
+
+function Stars(rating) {
+
+    for(let i=0; i < rating; i++) {
+        stars[i].style.color = '#FF6600'
+        }
+
     return (
         
        <div id='Stars'>

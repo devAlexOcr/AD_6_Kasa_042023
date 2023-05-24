@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Home from './pages/Home.jsx';
 import Error from './pages/Error';
 import FicheLogement from './pages/FicheLogement' 
 import Apropos from './pages/Apropos'
+
+import "./style.css"
+
 import Header from './components/Header/index'
 import Footer from './components/Footer';
+
 
 export default function Rout() {
   return ( 

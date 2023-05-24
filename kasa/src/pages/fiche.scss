@@ -1,0 +1,56 @@
+#presentation{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tags {
+    display: flex;
+    gap: 10px;
+}
+
+#gauche {
+    width: 50%;
+}
+
+#collapse {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .collapse {
+        width: 40%;
+    }
+
+    .content {
+        height: 150px;
+    }
+
+    button, .content {
+        width: 100%;
+    }
+}
+
+#collapse p ,#identite p,  #collapse li {
+    color: #FF6060;
+}
+
+@media all and (max-width: 768px) {
+
+    #presentation{
+        flex-direction: column;
+    }
+    #droite{
+        width: 90%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,23 @@
+#banniere {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    border-radius: 20px;
+
+    h1 {  
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: white;
+    font-size: 48px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    
+    #banniere {
+        height: 111px;
+    }
+}
