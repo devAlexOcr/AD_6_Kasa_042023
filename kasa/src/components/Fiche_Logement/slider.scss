@@ -1,7 +1,7 @@
 .slider{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: rem(20);
     width: 90%;
     margin: auto;
 }
@@ -9,10 +9,10 @@
 
 .slideshow{
     position: relative;
-    height: 415px;
+    height: rem(415);
     background-position: center;
     background-size: cover;
-    border-radius: 20px;
+    border-radius: rem(20);
     transition: all 0.4s ease-in-out;
 }
 
@@ -27,31 +27,24 @@
 }
 
 .btn-left{
-    left: 30px;
+    left: rem(30);
 }
 
 .btn-right{
-    right: 30px;
+    right: rem(30);
 }
 
 .show{
     display: flex;
-    gap: 20px;
-
-    img {
-        flex: 1;
-        width: 20%;
-        box-shadow: 0 2px 8px black;
-        cursor: pointer;
-    }
+    gap: rem(20);
+        img {
+            flex: 1;
+            width: 20%;
+            box-shadow: 0 rem(2) rem(8) black;
+            cursor: pointer;
+        }
 }
 
 .active{
-    border: 2px solid #ffffff;
-}
-
-@media all and (max-width: 768px) {
-.slideshow{
-    height: 255px;
-}
+    border: rem(2) solid #ffffff;
 }

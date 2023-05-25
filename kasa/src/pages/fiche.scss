@@ -7,7 +7,7 @@
 
 #tags {
     display: flex;
-    gap: 10px;
+    gap: rem(10);
 }
 
 #gauche {
@@ -19,38 +19,17 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-
-    .collapse {
-        width: 40%;
-    }
-
-    .content {
-        height: 150px;
-    }
-
-    button, .content {
-        width: 100%;
-    }
+        .collapse {
+            width: 40%;
+        }
+        .content {
+            height: rem(150);
+        }
+        button, .content {
+            width: 100%;
+        }
 }
 
 #collapse p ,#identite p,  #collapse li {
     color: #FF6060;
-}
-
-@media all and (max-width: 768px) {
-
-    #presentation{
-        flex-direction: column;
-    }
-    #droite{
-        width: 90%;
-    }
-
-    p {
-        font-size: 12px;
-    }
-
-    h1 {
-        font-size: 18px;
-    }
 }

@@ -1,34 +1,9 @@
-.content {
-    background-color: #F7F7F7;
-    border-radius: 5px;
-
-    p {
-        margin: 20px;
-        color: #FF6060;
-    }
-}
-
-    
-.content-parent {
-    height: 0px;
-    overflow: hidden;
-    transition: height ease 0.9s;
-}
-    
-.content-show {
+.App {
     display: flex;
-    margin-bottom: 25px;
-    position: relative;
-    top: -17px;
-    z-index: -1;
-    list-style: none;
-    
-    ul {
-        list-style: none;
-    padding-left: 20px;
-    }
+    flex-direction: column;
+    align-items: center;
+    margin: rem(30);    
 }
-
 
 button {
     display: flex;
@@ -36,39 +11,47 @@ button {
     justify-content: space-between;
     background-color: #FF6060;
     color: white;
-    font-size: 24px;
+    font-size: rem(24);
     text-align: left; 
-    height: 47px;
+    height: rem(47);
     border: none;
-    border-radius: 5px;
-    padding: 20px; 
-    margin-bottom: 10px;   
+    border-radius: rem(5);
+    padding: rem(20); 
+    margin-bottom: rem(10);   
+        .App & {
+            width: 100%;
+        }
 }
 
-
-
-.App {
+.content {
+    width: 100%;
+    background-color: #F7F7F7;
+    border-radius: rem(5);
+        p {
+            margin: rem(20);
+            color: #FF6060;
+        }
+}
+   
+.content-parent {
+    height: rem(0);
+    overflow: hidden;
+    transition: height ease 0.9s;
+}
+    
+.content-show {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px;
-
-    .content {
-        width: 1023px;
-    }
-
-    button {
-        width: 100%;
-    }
+    margin-bottom: rem(25);
+    position: relative;
+    top: -17px;
+    z-index: -1;
+    list-style: none;    
+        ul {
+            list-style: none;
+            padding-left: rem(20);
+        }
 }
 
 .collapse{
     width: 90%;
-}
-
-@media all and (max-width: 768px) {
-    
-    button img {
-        height: 8px;
-    }
 }

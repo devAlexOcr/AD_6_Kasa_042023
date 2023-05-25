@@ -3,21 +3,13 @@
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 250px;
+    height: rem(250);
     margin: auto;
-    border-radius: 20px;
-
-    h1 {  
-    font-family: 'Montserrat';
-    font-weight: 500;
-    color: white;
-    font-size: 48px;
-    }
-}
-
-@media all and (max-width: 768px) {
-    
-    #banniere {
-        height: 111px;
-    }
+    border-radius: rem(20);
+        h1 {  
+        font-family: 'Montserrat';
+        font-weight: 500;
+        color: white;
+        font-size: rem(48);
+        }
 }

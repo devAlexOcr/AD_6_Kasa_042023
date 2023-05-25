@@ -1,5 +1,8 @@
+@import "function.scss";
+
 body {
   margin: 0;
+  font-size: $base-font-size;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -25,7 +28,9 @@ code {
 @import "components/Fiche_Logement/slider.scss";
 @import "components/Fiche_Logement/tag.scss";
 
-@import "pages/apropos.scss";
 @import "pages/Error.scss";
 @import "pages/fiche.scss";
 @import "pages/home.scss";
+
+@import "mediaQ.scss";
+

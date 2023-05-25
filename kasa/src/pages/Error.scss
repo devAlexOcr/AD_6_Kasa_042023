@@ -2,45 +2,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    p {
-        font-family: "Montserrat";
-        color: #FF6060;
-    }
-
-    a {
-        font-family: 'Montserrat';
-        font-size: 18px; 
-        text-decoration: underline;
-        margin: 180px;
-    }
+        p {
+            font-family: "Montserrat";
+            color: #FF6060;
+        }
+        a {
+            font-family: 'Montserrat';
+            font-size: rem(18); 
+            text-decoration: underline;
+            margin: rem(180);
+        }
 }
 
 #code {    
     font-weight: 700;
-    font-size: 288px;
+    font-size: rem(288);
     margin: 0;
 }
 
 #description {
-    font-size: 36px;
+    font-size: rem(36);
     font-weight: 500;
     text-align: center;
-}
-
-@media all and (max-width: 768px) {
-
-    #code {
-        font-size: 96px;
-    }
-
-    #description{
-        font-size: 18px;
-        width: 90%;
-    }
-
-    #Error a {
-        font-size: 14px;
-        margin: 130px;
-    }
 }

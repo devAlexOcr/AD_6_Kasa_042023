@@ -1,0 +1,97 @@
+@media all and (max-width: 768px) {
+    
+    h1 {
+        font-size: rem(18);
+    }
+
+    p {
+        font-size: rem(12);
+    }
+
+    header {
+        img {
+            width: rem(145);
+            height: rem(47);
+        }
+    }
+
+    a {
+        font-size: rem(12);
+    }
+
+    #banniere {
+        height: rem(111);
+            h1 {
+                padding: rem(40);
+                font-size: rem(24);
+            }
+    }
+
+    #box {
+        width: 100%;
+        background: none;
+        flex-direction: column;
+        padding: 0;
+        margin: rem(20) auto;
+        gap: rem(20);    
+            a {
+                width: 90%;
+                margin: auto;  
+            }       
+    }
+    
+    #carte {
+        height: rem(255);
+            h2 {
+                width: 84%;
+        }
+    }
+    #presentation{
+        flex-direction: column;
+    }
+
+    #droite{
+        width: 100%;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #Stars{
+        gap: rem(10);
+        font-size: rem(13);
+    }
+
+    button {
+        font-size: rem(13);
+        height: rem(30);
+            img {
+                height: rem(8);
+            }
+    }
+
+    .slideshow{
+        height: rem(255);
+    }
+
+    .content{
+        font-size: rem(12);
+    }
+
+    // page Error 
+
+    #code {
+        font-size: rem(95);
+    }
+
+    #description{
+        font-size: rem(18);
+        width: 90%;
+    }
+
+    #Error {
+        a {
+            font-size: rem(14);
+            margin: rem(130);
+        }
+    }
+}

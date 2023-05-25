@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 body {
   margin: 0;
+  font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -15,35 +16,30 @@ code {
   align-items: center;
   justify-content: center;
   width: 90%;
-  height: 250px;
+  height: 15.625rem;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 1.25rem;
 }
 #banniere h1 {
   font-family: "Montserrat";
   font-weight: 500;
   color: white;
-  font-size: 48px;
+  font-size: 3rem;
 }
 
-@media all and (max-width: 768px) {
-  #banniere {
-    height: 111px;
-  }
-}
 #carte {
-  height: 340px;
+  height: 21.25rem;
   display: flex;
   flex-direction: column-reverse;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 #carte h2 {
   width: 22.5%;
   font-family: "Monserrat";
   font-weight: 500;
-  font-size: 18px;
-  margin: 20px;
+  font-size: 1.125rem;
+  margin: 1.25rem;
   color: white;
   position: absolute;
   white-space: pre-wrap;
@@ -51,7 +47,7 @@ code {
 
 #box a {
   display: block;
-  width: 30%;
+  width: 29%;
 }
 
 header {
@@ -60,40 +56,28 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  margin: 60px auto;
+  margin: 3.75rem auto;
 }
 header img {
-  width: 210px;
-  height: 68px;
+  width: 13.125rem;
+  height: 4.25rem;
 }
 
-@media all and (max-width: 768px) {
-  header img {
-    width: 145px;
-    height: 47px;
-  }
-}
 nav {
   display: flex;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
 a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #FF6060;
   white-space: nowrap;
 }
-
 a:hover {
   text-decoration: underline;
 }
 
-@media all and (max-width: 768px) {
-  a {
-    font-size: 12px;
-  }
-}
 #footer {
   background-color: black;
   color: white;
@@ -118,32 +102,11 @@ a:hover {
   margin-top: 65px;
 }
 
-.content {
-  background-color: #F7F7F7;
-  border-radius: 5px;
-}
-.content p {
-  margin: 20px;
-  color: #FF6060;
-}
-
-.content-parent {
-  height: 0px;
-  overflow: hidden;
-  transition: height ease 0.9s;
-}
-
-.content-show {
+.App {
   display: flex;
-  margin-bottom: 25px;
-  position: relative;
-  top: -17px;
-  z-index: -1;
-  list-style: none;
-}
-.content-show ul {
-  list-style: none;
-  padding-left: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.875rem;
 }
 
 button {
@@ -152,37 +115,51 @@ button {
   justify-content: space-between;
   background-color: #FF6060;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: left;
-  height: 47px;
+  height: 2.9375rem;
   border: none;
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px;
-}
-.App .content {
-  width: 1023px;
+  border-radius: 0.3125rem;
+  padding: 1.25rem;
+  margin-bottom: 0.625rem;
 }
 .App button {
   width: 100%;
+}
+
+.content {
+  width: 100%;
+  background-color: #F7F7F7;
+  border-radius: 0.3125rem;
+}
+.content p {
+  margin: 1.25rem;
+  color: #FF6060;
+}
+
+.content-parent {
+  height: 0rem;
+  overflow: hidden;
+  transition: height ease 0.9s;
+}
+
+.content-show {
+  display: flex;
+  margin-bottom: 1.5625rem;
+  position: relative;
+  top: -17px;
+  z-index: -1;
+  list-style: none;
+}
+.content-show ul {
+  list-style: none;
+  padding-left: 1.25rem;
 }
 
 .collapse {
   width: 90%;
 }
 
-@media all and (max-width: 768px) {
-  button img {
-    height: 8px;
-  }
-}
 #nom h1, #nom p {
   color: #FF6060;
 }
@@ -195,9 +172,9 @@ button {
 }
 
 #photo img {
-  width: 65px;
-  height: 65px;
-  border-radius: 33px;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  border-radius: 2.0625rem;
   background-color: gray;
   object-fit: cover;
 }
@@ -206,52 +183,40 @@ button {
   width: 40%;
   display: flex;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 #proprietaire {
   margin: 0;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 #Stars {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 10px;
-  font-size: 24px;
+  margin-top: 0.625rem;
+  font-size: 1.5rem;
   color: #E3E3E3;
 }
 
-@media all and (max-width: 768px) {
-  #droite {
-    width: 100%;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-  }
-  #Stars {
-    gap: 10px;
-    font-size: 13px;
-  }
-}
 .slider {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   width: 90%;
   margin: auto;
 }
 
 .slideshow {
   position: relative;
-  height: 415px;
+  height: 25.9375rem;
   background-position: center;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   transition: all 0.4s ease-in-out;
 }
 
@@ -265,53 +230,39 @@ button {
 }
 
 .btn-left {
-  left: 30px;
+  left: 1.875rem;
 }
 
 .btn-right {
-  right: 30px;
+  right: 1.875rem;
 }
 
 .show {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .show img {
   flex: 1;
   width: 20%;
-  box-shadow: 0 2px 8px black;
+  box-shadow: 0 0.125rem 0.5rem black;
   cursor: pointer;
 }
 
 .active {
-  border: 2px solid #ffffff;
+  border: 0.125rem solid #ffffff;
 }
 
-@media all and (max-width: 768px) {
-  .slideshow {
-    height: 255px;
-  }
-}
 #Tag p {
   font-family: "Montserrat";
   color: white;
   width: auto;
   white-space: nowrap;
-  padding: 3px 20px;
-  border-radius: 10px;
+  padding: 0.1875rem 1.25rem;
+  border-radius: 0.625rem;
   text-align: center;
   background-color: #FF6060;
 }
 
-@media all and (max-width: 768px) {
-  button {
-    font-size: 13px;
-    height: 30px;
-  }
-  .content {
-    font-size: 12px;
-  }
-}
 #Error {
   display: flex;
   flex-direction: column;
@@ -323,36 +274,23 @@ button {
 }
 #Error a {
   font-family: "Montserrat";
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: underline;
-  margin: 180px;
+  margin: 11.25rem;
 }
 
 #code {
   font-weight: 700;
-  font-size: 288px;
+  font-size: 18rem;
   margin: 0;
 }
 
 #description {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 500;
   text-align: center;
 }
 
-@media all and (max-width: 768px) {
-  #code {
-    font-size: 96px;
-  }
-  #description {
-    font-size: 18px;
-    width: 90%;
-  }
-  #Error a {
-    font-size: 14px;
-    margin: 130px;
-  }
-}
 #presentation {
   width: 90%;
   margin: 20px auto;
@@ -362,7 +300,7 @@ button {
 
 #tags {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 #gauche {
@@ -379,7 +317,7 @@ button {
   width: 40%;
 }
 #collapse .content {
-  height: 150px;
+  height: 9.375rem;
 }
 #collapse button, #collapse .content {
   width: 100%;
@@ -389,55 +327,96 @@ button {
   color: #FF6060;
 }
 
-@media all and (max-width: 768px) {
-  #presentation {
-    flex-direction: column;
-  }
-  #droite {
-    width: 90%;
-  }
-  p {
-    font-size: 12px;
-  }
-  h1 {
-    font-size: 18px;
-  }
-}
 #box {
   width: 83%;
   height: auto;
   background-color: #F7F7F7;
-  border-radius: 20px;
-  margin: 20px auto;
-  padding: 50px;
+  border-radius: 1.25rem;
+  margin: 1.25rem auto;
   display: flex;
+  justify-content: space-between;
+  align-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 57px;
+  gap: 3.125rem;
+  padding: 3.125rem;
 }
 
 @media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.125rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+  header img {
+    width: 9.0625rem;
+    height: 2.9375rem;
+  }
+  a {
+    font-size: 0.75rem;
+  }
+  #banniere {
+    height: 6.9375rem;
+  }
+  #banniere h1 {
+    padding: 2.5rem;
+    font-size: 1.5rem;
+  }
   #box {
     width: 100%;
     background: none;
     flex-direction: column;
     padding: 0;
-    margin: 20px auto;
-    gap: 20px;
+    margin: 1.25rem auto;
+    gap: 1.25rem;
   }
   #box a {
     width: 90%;
     margin: auto;
   }
-  #banniere h1 {
-    padding: 40px;
-    font-size: 24px;
-  }
   #carte {
-    height: 255px;
+    height: 15.9375rem;
   }
   #carte h2 {
     width: 84%;
+  }
+  #presentation {
+    flex-direction: column;
+  }
+  #droite {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #Stars {
+    gap: 0.625rem;
+    font-size: 0.8125rem;
+  }
+  button {
+    font-size: 0.8125rem;
+    height: 1.875rem;
+  }
+  button img {
+    height: 0.5rem;
+  }
+  .slideshow {
+    height: 15.9375rem;
+  }
+  .content {
+    font-size: 0.75rem;
+  }
+  #code {
+    font-size: 5.9375rem;
+  }
+  #description {
+    font-size: 1.125rem;
+    width: 90%;
+  }
+  #Error a {
+    font-size: 0.875rem;
+    margin: 8.125rem;
   }
 }
 
