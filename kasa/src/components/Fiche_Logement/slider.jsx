@@ -1,12 +1,11 @@
-import React from 'react'
-
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 
 import chevronLeft from '../../assets/icones/chevronLeft.png'
 import chevronRight from '../../assets/icones/chevronRight.png'
 
 import { Logements } from "../../data/Logements"
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+
 
 
 function Slider ()  {

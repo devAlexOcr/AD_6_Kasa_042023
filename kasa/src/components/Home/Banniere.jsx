@@ -1,4 +1,3 @@
-import React from "react";
 import { useRef, useEffect } from "react";
 
 function Banniere( {title='', SrcBg=''} ) {

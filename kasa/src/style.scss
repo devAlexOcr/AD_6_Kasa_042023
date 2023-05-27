@@ -22,11 +22,11 @@ code {
 @import "components/Header/header.scss";
 @import "components/Header/nav.scss";
 @import "components/footer/footer.scss";
-@import "components/Fiche_Logement/collapse.scss";
-@import "components/Fiche_Logement/nom.scss";
-@import "components/Fiche_Logement/proprietaire.scss";
+@import "components/Fiche_Logement/Collapse/collapse.scss";
+@import "components/Fiche_Logement/Presentation/nom.scss";
+@import "components/Fiche_Logement/presentation/proprietaire.scss";
 @import "components/Fiche_Logement/slider.scss";
-@import "components/Fiche_Logement/tag.scss";
+@import "components/Fiche_Logement/presentation/tag.scss";
 
 @import "pages/Error.scss";
 @import "pages/fiche.scss";

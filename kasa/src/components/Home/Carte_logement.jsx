@@ -1,6 +1,5 @@
-import React from "react";
-import  {Link} from 'react-router-dom'
 import { useEffect, useRef } from "react";
+import  {Link} from 'react-router-dom'
 
 function Carte({title, cover, id}) {
 

@@ -1,6 +1,3 @@
-import React from "react";
-
-
 function Proprietaire({title, photo}) {
     return (
        <div id='proprietaire'>

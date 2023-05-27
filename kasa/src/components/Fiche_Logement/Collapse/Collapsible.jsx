@@ -1,6 +1,6 @@
-import React from 'react';
-import { useState, useRef } from 'react';
-import fleche from '../../assets/icones/fleche.png'
+import { useState } from 'react';
+
+import fleche from '../../../assets/icones/fleche.png'
 
 const Collapsible = (props) => {
 

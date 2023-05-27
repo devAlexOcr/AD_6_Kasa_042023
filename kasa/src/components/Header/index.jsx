@@ -1,7 +1,5 @@
-import React from 'react'
-import Nav from './nav_link'
 import logo from '../../assets/logo/logo_header.png'
-
+import Nav from './nav_link'
 
 
 function Header() {

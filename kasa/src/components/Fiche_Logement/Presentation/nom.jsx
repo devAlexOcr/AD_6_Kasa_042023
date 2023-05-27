@@ -1,6 +1,3 @@
-import React from "react";
-
-
 function Nom({title, localisation}) {
     return (
        <div id='nom'>
