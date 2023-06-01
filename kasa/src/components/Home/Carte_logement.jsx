@@ -7,7 +7,6 @@ function Carte({title, cover, id}) {
     useEffect(() => {
         const ImgCover = carte.current;
         ImgCover.style.background = `linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.5)100%),url(${cover})no-repeat`
-        ImgCover.style.backgroundSize = 'cover'
     },[cover])
 
     return (

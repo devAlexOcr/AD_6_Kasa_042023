@@ -6,10 +6,17 @@
     height: rem(250);
     margin: auto;
     border-radius: rem(20);
+    background-position: center !important;
+    background-size: cover !important;
+    
+
         h1 {  
-        font-family: 'Montserrat';
         font-weight: 500;
         color: white;
         font-size: rem(48);
         }
+}
+
+.dark-mode {
+    background-blend-mode: darken !important;
 }

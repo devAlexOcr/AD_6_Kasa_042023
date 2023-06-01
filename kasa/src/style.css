@@ -2,13 +2,18 @@
 body {
   margin: 0;
   font-size: 16px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: #FF6060;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.star-rating {
+  color: orange;
 }
 
 #banniere {
@@ -19,24 +24,28 @@ code {
   height: 15.625rem;
   margin: auto;
   border-radius: 1.25rem;
+  background-position: center !important;
+  background-size: cover !important;
 }
 #banniere h1 {
-  font-family: "Montserrat";
   font-weight: 500;
   color: white;
   font-size: 3rem;
+}
+
+.dark-mode {
+  background-blend-mode: darken !important;
 }
 
 #carte {
   height: 21.25rem;
   display: flex;
   flex-direction: column-reverse;
-  background-size: cover;
+  background-size: cover !important;
   border-radius: 0.625rem;
 }
 #carte h2 {
-  width: 22.5%;
-  font-family: "Monserrat";
+  width: 20%;
   font-weight: 500;
   font-size: 1.125rem;
   margin: 1.25rem;
@@ -71,7 +80,6 @@ nav {
 a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: #FF6060;
   white-space: nowrap;
 }
 a:hover {
@@ -83,7 +91,7 @@ a:hover {
   color: white;
   bottom: 0;
   width: 100%;
-  height: 150px;
+  height: 9.375rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -94,12 +102,12 @@ a:hover {
   margin-bottom: 0;
 }
 #footer p {
-  padding-bottom: 25px;
+  padding-bottom: 1.5625rem;
 }
 #footer img {
-  width: 120px;
-  height: 40px;
-  margin-top: 65px;
+  width: 7.5rem;
+  height: 2.5rem;
+  margin-top: 4.0625rem;
 }
 
 .App {
@@ -134,7 +142,6 @@ button {
 }
 .content p {
   margin: 1.25rem;
-  color: #FF6060;
 }
 
 .content-parent {
@@ -160,15 +167,9 @@ button {
   width: 90%;
 }
 
-#nom h1, #nom p {
-  color: #FF6060;
-}
-
 #droite {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  width: 15%;
 }
 
 #photo img {
@@ -192,7 +193,6 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 0.625rem;
 }
 
 #Stars {
@@ -268,12 +268,7 @@ button {
   flex-direction: column;
   align-items: center;
 }
-#Error p {
-  font-family: "Montserrat";
-  color: #FF6060;
-}
 #Error a {
-  font-family: "Montserrat";
   font-size: 1.125rem;
   text-decoration: underline;
   margin: 11.25rem;
@@ -321,10 +316,6 @@ button {
 }
 #collapse button, #collapse .content {
   width: 100%;
-}
-
-#collapse p, #identite p, #collapse li {
-  color: #FF6060;
 }
 
 #box {

@@ -6,15 +6,15 @@ function Banniere( {title='', SrcBg=''} ) {
     useEffect(() => {
         const banImg = ref.current;
         banImg.style.background = `url(${SrcBg}),rgba(0, 0, 0, 0.3)`
-        banImg.style.backgroundPosition = "center"
-        banImg.style.backgroundSize= "cover"
-        banImg.style.backgroundBlendMode ="darken"
-        
-    },[SrcBg])                                                                              
+        if(title !== "" && (<h1>{title}</h1>)) {
+            banImg.classList.add('dark-mode') 
+        }
+    },[SrcBg])   
 
     return (
+    
        <div ref={ref} id='banniere'>
-        { title !== "" && (<h1>{title}</h1>)}
+        { title !== "" && (<h1>{title}</h1>) }
        </div>
        
     )

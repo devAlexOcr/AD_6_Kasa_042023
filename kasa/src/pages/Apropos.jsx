@@ -25,9 +25,12 @@ function Apropos() {
         })
     }, [])
 
+
     return (
+
     <>
         <Banniere SrcBg={SrcBg} />
+
         <div className="App">
             {
                 Collapse.map(col =>
@@ -36,8 +39,8 @@ function Apropos() {
                 </Collapsible>                
                 )
                 
-            }
-        </div>
+            } 
+        </div> 
     </>
     )
 }

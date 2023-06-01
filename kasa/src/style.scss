@@ -3,9 +3,10 @@
 body {
   margin: 0;
   font-size: $base-font-size;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Montserrat', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    color: #FF6060;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -13,6 +14,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.star-rating {
+  color: orange;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
@@ -23,7 +28,6 @@ code {
 @import "components/Header/nav.scss";
 @import "components/footer/footer.scss";
 @import "components/Fiche_Logement/Collapse/collapse.scss";
-@import "components/Fiche_Logement/Presentation/nom.scss";
 @import "components/Fiche_Logement/presentation/proprietaire.scss";
 @import "components/Fiche_Logement/slider.scss";
 @import "components/Fiche_Logement/presentation/tag.scss";

@@ -1,8 +1,6 @@
 #droite {
     display: flex;
     flex-direction: column;
-    align-content: center;
-    width: 15%;
 }
 
 #photo {
@@ -27,10 +25,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center
-    ;
-    gap: rem(10);
-    
+    align-items: center; 
 }
 
 #Stars {

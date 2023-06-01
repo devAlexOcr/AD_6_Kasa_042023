@@ -1,22 +1,14 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 import chevronLeft from '../../assets/icones/chevronLeft.png'
 import chevronRight from '../../assets/icones/chevronRight.png'
 
-import { Logements } from "../../data/Logements"
 
 
 
-function Slider ()  {
+function Slider ({imageSlider})  {
 
     const [index, setIndex] = useState(0)
-
-    const Params = useParams()
-    const logement = Logements.find((Logements) => Logements.id === Params.id)
-
-
-    const imageSlider =  logement.pictures
 
     const nextSlide = () => {
         setIndex(index + 1)
