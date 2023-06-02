@@ -13,9 +13,25 @@
     background-position: center;
     background-size: cover;
     border-radius: rem(20);
-    transition: all 0.8s ease-in-out;
+    transition: right 1s ;
 }
 
+@keyframes right {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+@keyframes left {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(-1);
+    }
+}
 
 .btn-right, 
 .btn-left{
@@ -28,10 +44,12 @@
 
 .btn-left{
     left: rem(30);
+
 }
 
 .btn-right{
     right: rem(30);
+
 }
 
 .show{
