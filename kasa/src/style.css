@@ -81,9 +81,11 @@ a {
   text-decoration: none;
   font-size: 1.5rem;
   white-space: nowrap;
+  transition: transform 400ms;
 }
 a:hover {
   text-decoration: underline;
+  transform: scale(1.15);
 }
 
 #footer {
@@ -147,7 +149,6 @@ button {
 .content-parent {
   height: 0rem;
   overflow: hidden;
-  transition: height ease 0.9s;
 }
 
 .content-show {
@@ -157,16 +158,42 @@ button {
   top: -17px;
   z-index: -1;
   list-style: none;
+  max-height: 200px;
+  transform-origin: center top;
 }
 .content-show ul {
   list-style: none;
   padding-left: 1.25rem;
 }
 
+.content-open {
+  animation: open 0.65s ease-in-out;
+}
+
+.content-close {
+  animation: close 0.65s ease-in-out;
+}
+
 .collapse {
   width: 90%;
 }
 
+@keyframes open {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes close {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
 #droite {
   display: flex;
   flex-direction: column;
@@ -217,7 +244,7 @@ button {
   background-position: center;
   background-size: cover;
   border-radius: 1.25rem;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .btn-right,

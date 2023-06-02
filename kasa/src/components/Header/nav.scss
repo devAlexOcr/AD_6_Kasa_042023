@@ -6,8 +6,11 @@ nav{
 a {
     text-decoration: none;
     font-size: rem(24);
-    white-space: nowrap;
+    white-space: nowrap;    
+    transition: transform 400ms; 
+ 
         &:hover {
             text-decoration: underline;
+            transform: scale(1.15);  
         }
 }

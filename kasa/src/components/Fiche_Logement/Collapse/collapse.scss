@@ -17,10 +17,10 @@ button {
     border: none;
     border-radius: rem(5);
     padding: rem(20); 
-    margin-bottom: rem(10);   
+    margin-bottom: rem(10);  
         .App & {
             width: 100%;
-        }
+        }    
 }
 
 .content {
@@ -35,7 +35,6 @@ button {
 .content-parent {
     height: rem(0);
     overflow: hidden;
-    transition: height ease 0.9s;
 }
     
 .content-show {
@@ -44,13 +43,41 @@ button {
     position: relative;
     top: -17px;
     z-index: -1;
-    list-style: none;    
-        ul {
-            list-style: none;
-            padding-left: rem(20);
-        }
+    list-style: none;
+    max-height: 200px;
+    transform-origin: center top;
+    ul {
+        list-style: none;
+        padding-left: rem(20);
+    }
+}
+.content-open{
+    animation: open 0.65s ease-in-out;
 }
 
+.content-close {
+    animation: close 0.65s ease-in-out;
+}
 .collapse{
     width: 90%;
+    
 }
+
+@keyframes open {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes close {
+    0% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(0);
+    }
+}
+
