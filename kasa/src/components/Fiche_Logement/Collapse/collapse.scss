@@ -19,9 +19,6 @@ button {
     padding: rem(20); 
     margin-bottom: rem(10);  
     cursor: pointer;
-        img {
-            transform: rotate(180deg);
-        }
         .App & {
             width: 100%;
         }    
@@ -53,3 +50,6 @@ button {
     
 }
 
+.rotate {
+transform: rotate(180deg);
+}

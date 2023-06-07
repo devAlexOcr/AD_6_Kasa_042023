@@ -133,9 +133,6 @@ button {
   margin-bottom: 0.625rem;
   cursor: pointer;
 }
-button img {
-  transform: rotate(180deg);
-}
 .App button {
   width: 100%;
 }
@@ -163,6 +160,10 @@ button img {
 
 .collapse {
   width: 90%;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 
 #droite {
