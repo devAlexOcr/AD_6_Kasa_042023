@@ -28,7 +28,7 @@ function Slider ({imageSlider})  {
         nextSlide()
         }, 4000)
         return () => clearInterval(interval)
-    }, [index])
+    }, [index,])
 
     return (
         <div className='slider' >
@@ -36,18 +36,20 @@ function Slider ({imageSlider})  {
                 className='slideshow'
                 style={{backgroundImage : `url(${imageSlider[index]})`}}
             >
-                <img 
-                    className='btn-left'
-                    src={chevronLeft}
-                    alt='button-left'
-                    onClick={previousSlide}
-                />
-                <img 
-                    className='btn-right'
-                    src={chevronRight}
-                    alt='button-right'
-                    onClick={nextSlide}
-                />
+                <p>{index+1} / {imageSlider.length}</p>
+
+                    <img 
+                        className={(imageSlider.length>1)?'btn-left' : "none"}
+                        src={chevronLeft}
+                        alt='button-left'
+                        onClick={previousSlide}
+                    />
+                    <img 
+                        className={(imageSlider.length>1)?'btn-right' : "none"}
+                        src={chevronRight}
+                        alt='button-right'
+                        onClick={nextSlide}
+                    />
             </div>
         </div>
     )

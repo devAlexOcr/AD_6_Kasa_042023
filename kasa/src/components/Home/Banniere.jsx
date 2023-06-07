@@ -9,7 +9,7 @@ function Banniere( {title='', SrcBg=''} ) {
         if(title !== "" && (<h1>{title}</h1>)) {
             banImg.classList.add('dark-mode') 
         }
-    },[SrcBg])   
+    },[SrcBg, title])   
 
     return (
     

@@ -6,7 +6,7 @@ function Proprietaire({title, photo}) {
                 
             </div>
             <div id="photo">
-                <img src={photo} />
+                <img src={photo} alt='photo proprietaire'/>
             </div>
        </div>
     )
