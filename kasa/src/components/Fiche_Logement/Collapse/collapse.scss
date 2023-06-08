@@ -19,6 +19,9 @@ button {
     padding: rem(20); 
     margin-bottom: rem(10);  
     cursor: pointer;
+        img {
+            transition: 600ms;
+        }
         .App & {
             width: 100%;
         }    

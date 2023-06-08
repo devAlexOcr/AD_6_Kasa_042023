@@ -133,6 +133,9 @@ button {
   margin-bottom: 0.625rem;
   cursor: pointer;
 }
+button img {
+  transition: 600ms;
+}
 .App button {
   width: 100%;
 }
