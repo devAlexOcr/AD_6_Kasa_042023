@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-function Banniere( {title='', SrcBg=''} ) {
+function Banniere( {title='', SrcBg='', id} ) {
     const ref = useRef(null);
 
     useEffect(() => {
@@ -13,7 +14,7 @@ function Banniere( {title='', SrcBg=''} ) {
 
     return (
     
-       <div ref={ref} id='banniere'>
+       <div ref={ref} className="banniere" id={id} >
         { title !== "" && (<h1>{title}</h1>) }
        </div>
        

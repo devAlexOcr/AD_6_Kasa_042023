@@ -13,18 +13,26 @@
             width: rem(145);
             height: rem(47);
         }
+        nav{
+            width: 40%;
+        }
     }
 
     a {
-        font-size: rem(12);
+        font-size: rem(12)!important;
     }
 
-    #banniere {
+    .banniere {
         height: rem(111);
+        margin-bottom: rem(50);
             h1 {
                 padding: rem(40);
                 font-size: rem(24);
             }
+    }
+
+    #about {
+        height: rem(233);
     }
 
     #box {
@@ -45,6 +53,11 @@
                 width: 84%;
         }
     }
+
+    .slideshow{
+        height: rem(255);
+    }
+
     #presentation{
         flex-direction: column;
     }
@@ -55,6 +68,10 @@
         align-items: center;
         justify-content: space-between;
     }
+    #gauche {
+        width: 100%;
+    }
+    
     #Stars{
         gap: rem(10);
         font-size: rem(13);
@@ -68,10 +85,18 @@
             }
     }
 
-    .slideshow{
-        height: rem(255);
+    #collapse {
+        flex-direction: column;
+        width: 100%;
+        .collapse {
+            width: 90%;
+            margin: auto;
+        }
     }
-
+    .collapse {
+        width: 100%;
+    }
+    
     .content{
         font-size: rem(12);
     }
@@ -80,17 +105,21 @@
 
     #code {
         font-size: rem(95);
+        margin: rem(50);
     }
 
     #description{
         font-size: rem(18);
         width: 90%;
+        margin: rem(100);
     }
 
     #Error {
         a {
-            font-size: rem(14);
-            margin: rem(130);
+            width: 100%;
+            text-align: center;
+            margin: rem(50);
+            margin-bottom: rem(150);
         }
     }
 }

@@ -4,7 +4,7 @@ function Collapse ({id, description, equipements}) {
     
     return (
 
-    <div id="collapse">
+    <div id="collapse_logement">
         <Collapsible key={id} label="Description">
             <p>{description}</p>    
         </Collapsible>    

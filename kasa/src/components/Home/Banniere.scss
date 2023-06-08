@@ -1,4 +1,4 @@
-#banniere {
+.banniere {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,8 +8,6 @@
     border-radius: rem(20);
     background-position: center !important;
     background-size: cover !important;
-    
-
         h1 {  
         font-weight: 500;
         color: white;

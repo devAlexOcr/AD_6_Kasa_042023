@@ -12,7 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-#banniere {
+.banniere {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@ code {
   background-position: center !important;
   background-size: cover !important;
 }
-#banniere h1 {
+.banniere h1 {
   font-weight: 500;
   color: white;
   font-size: 3rem;
@@ -153,6 +153,7 @@ button {
 .content ul {
   list-style: none;
   padding-left: 1.25rem;
+  line-height: 1.25rem;
 }
 .content p {
   margin: 1.25rem;
@@ -329,22 +330,22 @@ button {
 }
 
 #gauche {
-  width: 50%;
+  width: 60%;
 }
 
-#collapse {
+#collapse_logement {
   width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-#collapse .collapse {
+#collapse_logement .collapse {
   width: 45%;
 }
-#collapse .content {
+#collapse_logement .content {
   height: 9.375rem;
 }
-#collapse button, #collapse .content {
+#collapse_logement button, #collapse_logement .content {
   width: 100%;
 }
 
@@ -374,15 +375,22 @@ button {
     width: 9.0625rem;
     height: 2.9375rem;
   }
+  header nav {
+    width: 40%;
+  }
   a {
-    font-size: 0.75rem;
+    font-size: 0.75rem !important;
   }
-  #banniere {
+  .banniere {
     height: 6.9375rem;
+    margin-bottom: 3.125rem;
   }
-  #banniere h1 {
+  .banniere h1 {
     padding: 2.5rem;
     font-size: 1.5rem;
+  }
+  #about {
+    height: 14.5625rem;
   }
   #box {
     width: 90%;
@@ -401,6 +409,9 @@ button {
   #carte h2 {
     width: 84%;
   }
+  .slideshow {
+    height: 15.9375rem;
+  }
   #presentation {
     flex-direction: column;
   }
@@ -409,6 +420,9 @@ button {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+  }
+  #gauche {
+    width: 100%;
   }
   #Stars {
     gap: 0.625rem;
@@ -421,22 +435,34 @@ button {
   button img {
     height: 0.5rem;
   }
-  .slideshow {
-    height: 15.9375rem;
+  #collapse {
+    flex-direction: column;
+    width: 100%;
+  }
+  #collapse .collapse {
+    width: 90%;
+    margin: auto;
+  }
+  .collapse {
+    width: 100%;
   }
   .content {
     font-size: 0.75rem;
   }
   #code {
     font-size: 5.9375rem;
+    margin: 3.125rem;
   }
   #description {
     font-size: 1.125rem;
     width: 90%;
+    margin: 6.25rem;
   }
   #Error a {
-    font-size: 0.875rem;
-    margin: 8.125rem;
+    width: 100%;
+    text-align: center;
+    margin: 3.125rem;
+    margin-bottom: 9.375rem;
   }
 }
 

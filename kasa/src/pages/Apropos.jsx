@@ -29,7 +29,7 @@ function Apropos() {
     return (
 
     <>
-        <Banniere SrcBg={SrcBg} />
+        <Banniere SrcBg={SrcBg} id='about'/>
 
         <div className="App">
             {
