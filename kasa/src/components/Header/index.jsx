@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import logo from '../../assets/logo/logo_header.png'
 import Nav from './nav_link'
 
+import './header.scss'
+
 
 function Header() {
     return (

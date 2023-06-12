@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+
+import './Banniere.scss'
 
 function Banniere( {title='', SrcBg='', id} ) {
     const ref = useRef(null);

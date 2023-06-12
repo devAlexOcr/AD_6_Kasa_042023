@@ -1,3 +1,5 @@
+@import "../../function.scss";
+
 #carte{
     height: rem(340);
     display: flex;
@@ -21,5 +23,26 @@
     a {
         display: block;
         width: 29%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #box {
+        width: 90%;
+        background: none;
+        flex-direction: column;
+        padding: 0;
+        margin: rem(20) auto;  
+            a {
+                width: 100%;
+                margin: auto;  
+            }       
+    }
+    
+    #carte {
+        height: rem(255);
+            h2 {
+                width: 84%;
+        }
     }
 }

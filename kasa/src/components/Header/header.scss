@@ -1,3 +1,5 @@
+@import "../../function.scss";
+
 header {
     display: flex;
     flex-direction: row;
@@ -9,4 +11,20 @@ header {
             width: rem(210);
             height: rem(68);
         }
+}
+
+@media all and (max-width: 768px) {
+    header {
+        img {
+            width: rem(145);
+            height: rem(47);
+        }
+        nav{
+            width: 40%;
+        }
+    }
+
+    a {
+        font-size: rem(12)!important;
+    }
 }

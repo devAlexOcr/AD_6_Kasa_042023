@@ -1,3 +1,5 @@
+@import "../../function.scss";
+
 .slider{
     display: flex;
     flex-direction: column;
@@ -75,4 +77,10 @@
 
 .active{
     border: rem(2) solid #ffffff;
+}
+
+@media all and (max-width: 768px) {
+    .slideshow{
+        height: rem(255);
+    }  
 }

@@ -9,11 +9,10 @@ import Error from './pages/Error';
 import FicheLogement from './pages/FicheLogement' 
 import Apropos from './pages/Apropos'
 
-import "./style.css"
-
 import Header from './components/Header/index'
 import Footer from './components/Footer';
 
+import "./style.css"
 
 export default function Rout() {
   return ( 

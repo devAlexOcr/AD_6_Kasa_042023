@@ -1,5 +1,6 @@
 
 import Nom from '../Presentation/nom'
+
 import Proprietaire from '../Presentation/proprietaire'
 import Tag from '../Presentation/Tag'
 import Stars from '../Presentation/Stars'

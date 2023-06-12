@@ -34,7 +34,7 @@ function Apropos() {
         <div className="App">
             {
                 Collapse.map(col =>
-                <Collapsible key={col.id} label={col.title}>
+                <Collapsible key={col.id} label={col.title} height='120px'>
                 <p>{col.description}</p>    
                 </Collapsible>                
                 )

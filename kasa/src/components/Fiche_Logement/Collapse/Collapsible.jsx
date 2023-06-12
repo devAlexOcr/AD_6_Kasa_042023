@@ -30,8 +30,8 @@ const Collapsible = (props) => {
                 </button>  
                         <div className="content-parent" >
                             <div className='content'ref={contentRef}
-                            style={open ? {height: contentRef.current= "200px"}
-                                         : {height: "0px"}
+                            style={open ? {height: contentRef.current=`${props.height}`, top: contentRef.current='-17px'}
+                                         : {height: "0px", top: '-200px'}
                             }>
                                 {props.children}
                             </div>

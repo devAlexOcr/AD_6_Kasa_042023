@@ -1,15 +1,17 @@
 import Collapsible from './Collapsible.jsx'
 
-function Collapse ({id, description, equipements}) {
+import './collapse.scss'
+
+function Collapse ({id, description, equipements, height}) {
     
     return (
 
     <div id="collapse_logement">
-        <Collapsible key={id} label="Description">
+        <Collapsible key={id} label="Description" height='180px'>
             <p>{description}</p>    
         </Collapsible>    
  
-        <Collapsible key={id+1} label="Equipements" >
+        <Collapsible key={id+1} label="Equipements" height='180px'>
             <ul>
                 {equipements.map((equip, i) =>
                 <li key={i}>{equip}</li>

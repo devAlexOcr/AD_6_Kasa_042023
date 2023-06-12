@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import  {Link} from 'react-router-dom'
 
+import './carte.scss'
+
 function Carte({title, cover, id}) {
 
     const carte = useRef(null);

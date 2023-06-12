@@ -1,4 +1,4 @@
-@import "function.scss";
+@import "./function.scss";
 
 body {
   margin: 0;
@@ -18,19 +18,5 @@ code {
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-@import "components/Home/Banniere.scss";
-@import "components/Home/carte.scss";
-@import "components/Header/header.scss";
-@import "components/Header/nav.scss";
-@import "components/footer/footer.scss";
-@import "components/Fiche_Logement/Collapse/collapse.scss";
-@import "components/Fiche_Logement/presentation/proprietaire.scss";
-@import "components/Fiche_Logement/slider.scss";
-@import "components/Fiche_Logement/presentation/tag.scss";
-
-@import "pages/Error.scss";
-@import "pages/fiche.scss";
-@import "pages/home.scss";
-
-@import "mediaQ.scss";
+// @import "mediaQ.scss";
 

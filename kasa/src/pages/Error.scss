@@ -1,3 +1,5 @@
+@import "../function.scss";
+
 #Error {
     display: flex;
     flex-direction: column;
@@ -19,4 +21,27 @@
     font-size: rem(36);
     font-weight: 500;
     text-align: center;
+}
+
+@media all and (max-width: 768px) {
+    
+    #code {
+        font-size: rem(95);
+        margin: rem(50);
+    }
+
+    #description{
+        font-size: rem(18);
+        width: 90%;
+        margin: rem(100);
+    }
+
+    #Error {
+        a {
+            width: 100%;
+            text-align: center;
+            margin: rem(50);
+            margin-bottom: rem(150);
+        }
+    }
 }

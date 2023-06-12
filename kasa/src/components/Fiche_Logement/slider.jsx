@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import chevronLeft from '../../assets/icones/chevronLeft.png'
 import chevronRight from '../../assets/icones/chevronRight.png'
 
-
+import './slider.scss'
 
 
 function Slider ({imageSlider})  {

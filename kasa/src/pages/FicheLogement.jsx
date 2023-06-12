@@ -5,6 +5,7 @@ import Slider from '../components/Fiche_Logement/slider.jsx'
 import Presentation from '../components/Fiche_Logement/Presentation/Presentation.jsx'
 import Collapse from '../components/Fiche_Logement/Collapse/Collapse.jsx'
 
+import './fiche.scss'
 
 function FicheLogement() {
 
@@ -44,7 +45,7 @@ function FicheLogement() {
                 <>   
                     <Slider imageSlider={Logement.pictures} />
                     <Presentation dataLog={Logement} />    
-                    <Collapse id={Logement.id} description={Logement.description} equipements={Logement.equipments}/>
+                    <Collapse id={Logement.id} description={Logement.description} equipements={Logement.equipments} height='200px'/>
                 </>
                  :
                 <></>

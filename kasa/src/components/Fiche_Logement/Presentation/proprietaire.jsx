@@ -1,3 +1,5 @@
+import './proprietaire.scss'
+
 function Proprietaire({title, photo}) {
     return (
        <div id='proprietaire'>

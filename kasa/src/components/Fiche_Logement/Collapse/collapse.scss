@@ -1,3 +1,5 @@
+@import "../../../function.scss";
+
 .App {
     display: flex;
     flex-direction: column;
@@ -20,7 +22,7 @@ button {
     margin-bottom: rem(10);  
     cursor: pointer;
         img {
-            transition: 600ms;
+            transition: transform 1s;
         }
         .App & {
             width: 100%;
@@ -29,31 +31,62 @@ button {
 
 .content {
     background-color: #F7F7F7;
-    height: rem(0);
     overflow: hidden;
     display: flex;
     margin-bottom: rem(25);
     position: relative;
-    top: -17px;
     z-index: -1;
     list-style: none;
     max-height: 200px;
-    transition: height 600ms;
+    transition: all 1s;
         ul {
             list-style: none;
             padding-left: rem(20);
-            line-height: rem(20);
+            line-height: rem(26);
         }
         p {
             margin: rem(20);
+            line-height: rem(26);
         } 
 }
 
 .collapse{
     width: 90%;
+    overflow: hidden;
     
 }
 
 .rotate {
-transform: rotate(180deg);
+transform: rotate(-180deg);
+}
+
+
+@media all and (max-width: 768px) {
+    
+    button {
+        font-size: rem(13);
+        height: rem(30);
+            img {
+                height: rem(8);
+            }
+    }
+
+    #collapse {
+        flex-direction: column;
+        width: 100%;
+        .collapse {
+            width: 90%;
+            margin: auto;
+        }
+    }
+    .collapse {
+        width: 100%;
+    }
+    
+    .content{
+        font-size: rem(12);
+        p, ul {
+            line-height: rem(16);
+        }
+    }
 }

@@ -5,6 +5,7 @@ import SrcBg from '../assets/images/background_img.png'
 
 import Carte from '../components/Home/Carte_logement'
 
+import './home.scss'
 
 function Home() {
 

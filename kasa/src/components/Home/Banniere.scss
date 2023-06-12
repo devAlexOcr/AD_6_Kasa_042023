@@ -1,3 +1,5 @@
+@import "../../function.scss";
+
 .banniere {
     display: flex;
     align-items: center;
@@ -17,4 +19,29 @@
 
 .dark-mode {
     background-blend-mode: darken !important;
+}
+
+@media all and (max-width: 768px) {
+    
+    h1 {
+        font-size: rem(18);
+    }
+
+    p {
+        font-size: rem(12);
+    }
+
+    .banniere {
+        height: rem(111);
+        margin-bottom: rem(50);
+            h1 {
+                padding: rem(40);
+                font-size: rem(24);
+            }
+    }
+
+    #about {
+        height: rem(233);
+    }
+
 }

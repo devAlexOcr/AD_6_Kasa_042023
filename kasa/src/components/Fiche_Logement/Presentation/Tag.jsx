@@ -1,3 +1,5 @@
+import './tag.scss'
+
 function Tag({title}) {
   
     return (
