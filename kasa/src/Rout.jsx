@@ -10,8 +10,7 @@ import Footer from './components/Footer';
 
 import "./style.css"
 
-
-export default function Rout() {
+function Rout() {
     return ( 
       <BrowserRouter>
         <Header />
@@ -25,3 +24,5 @@ export default function Rout() {
       </BrowserRouter>
     )
   }
+
+  export default Rout
