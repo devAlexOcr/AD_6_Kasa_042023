@@ -40,14 +40,15 @@ button {
     max-height: 200px;
     transition: all 1s;
         ul {
+            font-size: rem(16);
             list-style: none;
             padding-left: rem(20);
-            line-height: rem(26);
+            line-height: rem(24);
         }
         p {
-            font-size: rem(24);
+            font-size: rem(16);
             margin: rem(20);
-            line-height: rem(34);
+            line-height: rem(28);
         } 
 }
 
