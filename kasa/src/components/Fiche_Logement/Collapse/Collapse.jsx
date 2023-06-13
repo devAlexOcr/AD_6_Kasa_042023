@@ -2,7 +2,7 @@ import Collapsible from './Collapsible.jsx'
 
 import './collapse.scss'
 
-function Collapse ({id, description, equipements, height}) {
+function Collapse ({id, description, equipements}) {
     
     return (
 

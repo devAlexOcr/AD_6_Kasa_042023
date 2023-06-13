@@ -31,3 +31,14 @@
             width: 100%;
         }
 }
+
+@media all and (max-width: 768px) {
+    #collapse_logement {
+        flex-direction: column;
+        width: 100% ;
+        .collapse {
+            width: 90% ;
+            margin: auto;
+        }
+    }
+}
